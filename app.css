@@ -1,0 +1,85 @@
+/* Palette */
+/* 264653
+2A9D8F
+E9C46A
+F4A261
+E76F51 */
+
+body {
+    background-color: #264653;
+}
+
+.header {
+    background-color: #2A9D8F;
+    width: 98%;
+    height: 10%;
+    margin: auto;
+}
+
+h1 {
+    color: #F4A261;
+    font-size: 60px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.seperator {
+    background-color: #E76F51;
+    width: 98%;
+    height: 1%;
+    margin: auto;
+}
+
+.tab {
+    width: 98%;
+    height: 2%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tab button {
+    background-color: #E9C46A;
+    color: #E76F51;
+    border: 2px solid #E76F51;
+    float: left;
+    /* border: none; */
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #264653;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.content {
+    background-color: #2A9D8F;
+    width: 98%;
+    height: 80%;
+    margin: auto;
+    border: 2px solid #E76F51;
+}
+
+.tab-content {
+    background-color: #E9C46A;
+    width: 98%;
+    height: 90%;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid #E76F51;
+}
