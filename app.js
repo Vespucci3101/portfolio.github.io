@@ -1,4 +1,4 @@
-function SelectTab(event)
+function SelectTab(event, gameName)
 {
     var tablinks;
     tablinks = document.getElementsByClassName("tablinks");
@@ -7,5 +7,11 @@ function SelectTab(event)
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    document.getElementById(gameName).style.display = "block";
     event.currentTarget.className += " active";
 }

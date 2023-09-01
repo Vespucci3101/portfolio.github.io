@@ -1,30 +1,32 @@
 /* Palette */
-/* 264653
-2A9D8F
-E9C46A
-F4A261
-E76F51 */
+/* 
+#16354D - Dark blue
+#6B99C3 - Royal blue
+#D2D2D4 - Grey
+#E4E5EA - Light Grey
+#0C151C - Black 
+*/
 
 body {
-    background-color: #264653;
+    background-color: #16354D;
 }
 
 .header {
-    background-color: #2A9D8F;
+    background-color: #E4E5EA;
     width: 98%;
     height: 10%;
     margin: auto;
 }
 
 h1 {
-    color: #F4A261;
-    font-size: 60px;
+    color: #0C151C;
+    font-size: 10vh;
     margin-left: 10px;
     margin-top: 0px;
 }
 
 .seperator {
-    background-color: #E76F51;
+    background-color: #6B99C3;
     width: 98%;
     height: 1%;
     margin: auto;
@@ -33,16 +35,15 @@ h1 {
 .tab {
     width: 98%;
     height: 2%;
-    margin: auto;
+    margin-left: 2%;
     margin-top: 30px;
 }
 
 .tab button {
-    background-color: #E9C46A;
-    color: #E76F51;
-    border: 2px solid #E76F51;
+    background-color: #E4E5EA;
+    color: #0C151C;
+    border: 2px solid #6B99C3;
     float: left;
-    /* border: none; */
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
@@ -51,35 +52,45 @@ h1 {
   
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #D2D2D4;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #264653;
+    background-color: #16354D;
+    color: #E4E5EA;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-.content {
-    background-color: #2A9D8F;
-    width: 98%;
-    height: 80%;
-    margin: auto;
-    border: 2px solid #E76F51;
-}
-
-.tab-content {
-    background-color: #E9C46A;
+    background-color: #E4E5EA;
     width: 98%;
     height: 90%;
     margin: auto;
     margin-top: 40px;
-    border: 2px solid #E76F51;
+    border: 2px solid #6B99C3;
+}
+
+.content {
+    background-color: #D2D2D4;
+    width: 98%;
+    height: 80%;
+    margin: auto;
+    border: 2px solid #6B99C3;
+}
+
+.GameTitle {
+    margin: 0px 0px 0px 10px;
+    color: #0C151C;
+    font-size: 4vh;
+}
+
+.GameDescription {
+    margin: 10px 0px 0px 10px;
+    color: #0C151C;
+    font-size: 2vh;
+}
+
+#OnionRing {
+    display: none;
 }
