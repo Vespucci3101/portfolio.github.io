@@ -20,7 +20,7 @@ body {
 
 h1 {
     color: #0C151C;
-    font-size: 10vh;
+    font-size: 10vmin;
     margin-left: 10px;
     margin-top: 0px;
 }
@@ -64,17 +64,16 @@ h1 {
 /* Style the tab content */
 .tabcontent {
     background-color: #E4E5EA;
-    width: 98%;
-    height: 90%;
-    margin: auto;
-    margin-top: 40px;
+    width: auto;
+    height: auto;
+    margin: 40px 10px 10px 10px;
     border: 2px solid #6B99C3;
 }
 
 .content {
     background-color: #D2D2D4;
-    width: 98%;
-    height: 80%;
+    width: auto;
+    height: auto;
     margin: auto;
     border: 2px solid #6B99C3;
 }
@@ -86,7 +85,7 @@ h1 {
 }
 
 .GameDescription {
-    margin: 10px 0px 0px 10px;
+    margin: 10px 10px 0px 10px;
     color: #0C151C;
     font-size: 2vh;
 }
@@ -109,7 +108,7 @@ h1 {
 
 .images {
     width: 95%;
-    height: 60%;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: center;

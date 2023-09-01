@@ -1,43 +1,61 @@
 <html>
+
     <link rel="stylesheet" href="app.css">
     <script src="app.js"></script> 
+
     <body>
         <div class="header">
             <h1>Guillaume Nadeau</h1>
         </div>
+
         <div class="seperator">
 
         </div>
+
         <div class="tab">
             <button class="tablinks active" onclick="SelectTab(event, 'NuclearRollout')">Ubisoft Gamelab 2023</button>
             <button class="tablinks" onclick="SelectTab(event, 'OnionRing')">Onion Ring</button>
         </div>
+
         <div class="content">
+
             <div id="NuclearRollout" class="tabcontent">
+
                 <h2 class="GameTitle">Nuclear Rollout</h2>
-                <p class="GameDescription">
-                    This game was made for the Ubisoft Gamelab 2023. It was developed by a team of 8 people, containing 4 programmers, 3 artists and 1 game designer in 10 weeks. 
+
+                <p align="justify" class="GameDescription">
+                    This game was made for the Ubisoft Gamelab 2023. It was developed by a team of 9 people, containing 4 programmers, 3 artists, 1 game designer and 1 sound designer in 10 weeks. 
                     The game was made from scratch, so all the code, the assets and the music was made specifically for this game.
                     We won the <b>"Best Game Design"</b> prize, the <b>"Best Quality of the 3C's"</b> and nominated for the best prototype of the competition.
                     <br>
                     <br>
                     The whole game was made with Unreal Engine 5.1. As a programmer on this project, I had the chance to develop many gameplay features in C++ and also UI features in blueprints.
+                    Although I did a lot on the game, my main features were the destructible boxes, the placeable items, the persistence between scene, the UI elements during levels and some level design. 
+                    The destructible boxes mainly needed collision handling to check if the player attack could reach the box and destroy it.
+                    The placeable item was a bit more tricky since it needed a lot of 3D mathematics to make it always perfectly flat to the floor.
+                    the persistence was pretty simple because Unreal already as the GameInstance working as a persistence between levels, but I still needed to establish the roll back in case of the player death.
+                    Finally, the UI elements were done in blueprints and were all quite different since some needed the player collision to trigger, some were based on the level time and others on the performance of the player.
                     <br>
                     <br>
                     Here's a link to the code of the game, containing the C++ classes and the blueprints : <a href="https://github.com/Vespucci3101/NuclearRollout">https://github.com/Vespucci3101/NuclearRollout</a>
                     <br>
                     Link to the downloadable game : <a href="https://jeansebastiendg.itch.io/nuclear-rollout">https://jeansebastiendg.itch.io/nuclear-rollout</a>
                 </p>
+
                 <div class="images">
-                    <div id="ImgContainer"><img id="gameImg" src="NR.png" alt="Nuclear Rollout"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="Score.png" alt="Credits"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="LevelCam.png" alt="Credits"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="Credits.png" alt="Credits"></div>
+                    <div id="ImgContainer"><a href="NR.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="NR.png" alt="Nuclear Rollout"></a></div>
+                    <div id="ImgContainer"><a href="Score.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Score.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="LevelCam.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="LevelCam.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Credits.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Credits.png" alt="Credits"></a></div>
                 </div>
+
             </div>
+
             <div id="OnionRing" class="tabcontent">
+
                 <h2 class="GameTitle">Onion Ring</h2>
-                <p class="GameDescription">
+
+                <p align="justify" class="GameDescription">
                     This game is one my personal project made in Unity. This game is still <b>IN PROGRESS</b>, which is why my code do need some refactoring, but I try to improve everyday.
                     Being only a programmer, not many assets and UI elements are completed and many will probably stay as they are since I don't have the artistic skills needed.
                     <br>
@@ -51,13 +69,18 @@
                     <br>
                     Here's a link to the code of the game and more description about the elements of the gameplay : <a href="https://github.com/Vespucci3101/OnionRing">https://github.com/Vespucci3101/OnionRing</a>
                 </p>
+
                 <div class="images">
-                    <div id="ImgContainer"><img id="gameImg" src="OnionRing.png" alt="Nuclear Rollout"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="Rythm.png" alt="Credits"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="Map.png" alt="Credits"></div>
-                    <div id="ImgContainer"><img id="gameImg" src="Combat.png" alt="Credits"></div>
+                    <div id="ImgContainer"><a href="OnionRing.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="OnionRing.png" alt="Nuclear Rollout"></a></div>
+                    <div id="ImgContainer"><a href="Rythm.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Rythm.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Map.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Map.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Combat.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Combat.png" alt="Credits"></a></div>
                 </div>
+
             </div>
+
         </div>
+
     </body>
+    
 </html>
