@@ -94,3 +94,23 @@ h1 {
 #OnionRing {
     display: none;
 }
+
+#gameImg {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 30px;
+    border: 2px solid #6B99C3;
+}
+
+#ImgContainer {
+    margin: 5px 5px;
+}
+
+.images {
+    width: 95%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
