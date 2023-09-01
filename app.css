@@ -94,6 +94,10 @@ h1 {
     display: none;
 }
 
+#AboutMe {
+    display: none;
+}
+
 #gameImg {
     object-fit: contain;
     max-width: 100%;
