@@ -81,7 +81,13 @@ h1 {
 .GameTitle {
     margin: 0px 0px 0px 10px;
     color: #0C151C;
-    font-size: 4vh;
+    font-size: 4vmin;
+}
+
+.GameSousTitle {
+    margin: 0px 0px 0px 10px;
+    color: #0C151C;
+    font-size: 2vmin;
 }
 
 .GameDescription {
@@ -91,6 +97,10 @@ h1 {
 }
 
 #OnionRing {
+    display: none;
+}
+
+#PracticalWorks {
     display: none;
 }
 

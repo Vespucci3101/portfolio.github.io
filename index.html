@@ -15,6 +15,7 @@
         <div class="tab">
             <button class="tablinks active" onclick="SelectTab(event, 'NuclearRollout')">Ubisoft Gamelab 2023</button>
             <button class="tablinks" onclick="SelectTab(event, 'OnionRing')">Onion Ring</button>
+            <button class="tablinks" onclick="SelectTab(event, 'PracticalWorks')">Practical Works</button>
             <button class="tablinks" onclick="SelectTab(event, 'AboutMe')">About Me</button>
         </div>
 
@@ -69,6 +70,99 @@
                     <br>
                     <br>
                     Here's a link to the code of the game and more description about the elements of the gameplay : <a href="https://github.com/Vespucci3101/OnionRing" target="_blank" rel="noreferrer noopener">https://github.com/Vespucci3101/OnionRing</a>
+                </p>
+
+                <div class="images">
+                    <div id="ImgContainer"><a href="OnionRing.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="OnionRing.png" alt="Nuclear Rollout"></a></div>
+                    <div id="ImgContainer"><a href="Rythm.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Rythm.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Map.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Map.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Combat.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Combat.png" alt="Credits"></a></div>
+                </div>
+
+            </div>
+
+            <div id="PracticalWorks" class="tabcontent">
+
+                <h2 class="GameTitle">Practical Works</h2>
+
+                <p align="justify" class="GameDescription">
+                    This section contains some of the works that I've done during my software engineering degree at Polytechnique Montréal.
+                    <br>
+                    <br>
+                </p>
+
+                <h3 class="GameSousTitle">Video Game AI</h3>
+
+                <p align="justify" class="GameDescription">
+                    The first project is from the AI for video game course. These works were meant to learn how to program an AI using different techniques.
+                    <br>
+                    <br>
+                    The first part was to make an AI making decision like in the game Pac man. 
+                    The AI had to chase the player when seen and see if it was powered up by an item. 
+                    If so, thew AI had to know and then turn around and escape from the player by moving to specific locations.
+                    If the player was not seen, then the AI would pickup collectibles in his path.
+                    <br>
+                    Here's the link to the main logic of the first part of the project : 
+                    <a href="https://github.com/JeanSebastienDG/TP1/blob/main/TP1/Source/SoftDesignTraining/SDTAIController.cpp" target="_blank" rel="noreferrer noopener">
+                        https://github.com/JeanSebastienDG/TP1/blob/main/TP1/Source/SoftDesignTraining/SDTAIController.cpp
+                    </a>
+                    <br>
+                    <br>
+                    The second part was similar to the first one, but this time, the AI had to navigate through a navmesh and navlinks.
+                    On this part, the AI now had a field of view to detect collectibles and the player.
+                    Another major improvement was the implementation of the LKP (Last known position) of the player. 
+                    So when the player went out of the field of view of the AI, the computer had to go to the last position where the player was seen.
+                    At last, the AI now also needed to strategically escape from the player when he is powered up by moving smartly away from the player and choosing the right location to go to.
+                    <br>
+                    Here's the link to the main logic of the second part of the project : <a href="OnionRing.png" target="_blank" rel="noreferrer noopener"></a>
+                    <a href="https://github.com/JeanSebastienDG/TP1/blob/main/TP2/TP2%205.0/TP2/Source/SoftDesignTraining/SDTAIController.cpp" target="_blank" rel="noreferrer noopener">
+                        https://github.com/JeanSebastienDG/TP1/blob/main/TP2/TP2%205.0/TP2/Source/SoftDesignTraining/SDTAIController.cpp
+                    </a>
+                    <br>
+                    <br>
+                    Finally, the third and last part incorporated the Behavior tree.
+                    The AI needed to have the same behaviors as the second part, but this time using tasks, sequence, selector, etc.
+                    It also now had the management of multiple AI at the same time to try to circle the player when it is seen.
+                    The gestion of multiple AI needed to chare the LKP through all of the agents who had seen the player and were searching for it.
+                    <br>
+                    Here's the link to the group manager : <a href="https://github.com/JeanSebastienDG/TP1/blob/main/TP3/TP3_Equipe05/Source/SoftDesignTraining/SDTAiGroupManager.cpp" target="_blank" rel="noreferrer noopener">
+                        https://github.com/JeanSebastienDG/TP1/blob/main/TP3/TP3_Equipe05/Source/SoftDesignTraining/SDTAiGroupManager.cpp
+                    </a>
+                    <br>
+                    Here's the link to the behavior tree tasks (BT...) : <a href="https://github.com/JeanSebastienDG/TP1/tree/main/TP3/TP3_Equipe05/Source/SoftDesignTraining" target="_blank" rel="noreferrer noopener">
+                        https://github.com/JeanSebastienDG/TP1/tree/main/TP3/TP3_Equipe05/Source/SoftDesignTraining
+                    </a>
+                </p>
+
+                <div class="images">
+                    <div id="ImgContainer"><a href="Navmesh.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Navmesh.png" alt="Nuclear Rollout"></a></div>
+                    <div id="ImgContainer"><a href="BehaviorTree.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="BehaviorTree.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="AITP3.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="AITP3.png" alt="Credits"></a></div>
+                </div>
+
+                <h3 class="GameSousTitle">Video Game Conception</h3>
+
+                <p align="justify" class="GameDescription">
+                    This second project is from the video game conception course. These works were meant to learn how to design and program gameplay features.
+                    <br>
+                    <br>
+                    This game is a 2.5D platformer containing multiple elements of any video games. 
+                    Elements like gameplay features such as movements, economic systems like stamina and health, visual elements like assets and animations and finally music and sound effects.
+                    <br>
+                    The main part of the game were to make the character movemennts, such as jumping, double jumps, wall jumps and sprinting.
+                    For the economic system of the game, it has a stamina bar draining when jumping and sprinting. 
+                    It also has a health bar for when the player collides with killer walls or floors or when an enemy attacks him.
+                    Health can also be regain by using health pad and standing in them for a certain amount of time.
+                    There also is a progress system represented by lever doors, button doors and key doors that the player has to discover to continue and advance in the game.
+                    Finally, the player can pull and push boxes around the level to make him platforms and continue through the level.
+                    <br>
+                    The game also has the classic elements of any video games like a start menu and a pause menu.
+                    Animations for the different movements of the character and sound according to the player actions like picking up a key or stepping on a button, etc.
+                    <br>
+                    <br>
+                    Here's the link to the project code : <a href="https://github.com/MrPuffs/LOG4715/tree/main/Assets/Supercyan%20Character%20Pack%20Free%20Sample/Scripts" target="_blank" rel="noreferrer noopener">
+                        https://github.com/MrPuffs/LOG4715/tree/main/Assets/Supercyan%20Character%20Pack%20Free%20Sample/Scripts
+                    </a>
                 </p>
 
                 <div class="images">
