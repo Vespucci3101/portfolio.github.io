@@ -14,6 +14,7 @@
 
         <div class="tab">
             <button class="tablinks active" onclick="SelectTab(event, 'NuclearRollout')">Ubisoft Gamelab 2023</button>
+            <button class="tablinks" onclick="SelectTab(event, 'ElementalDefenders')">Elemental Defenders</button>
             <button class="tablinks" onclick="SelectTab(event, 'OnionRing')">Onion Ring</button>
             <button class="tablinks" onclick="SelectTab(event, 'PracticalWorks')">Practical Works</button>
             <button class="tablinks" onclick="SelectTab(event, 'AboutMe')">About Me</button>
@@ -49,6 +50,39 @@
                     <div id="ImgContainer"><a href="Score.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Score.png" alt="Credits"></a></div>
                     <div id="ImgContainer"><a href="LevelCam.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="LevelCam.png" alt="Credits"></a></div>
                     <div id="ImgContainer"><a href="Credits.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Credits.png" alt="Credits"></a></div>
+                </div>
+
+            </div>
+
+            <div id="ElementalDefenders" class="tabcontent">
+
+                <h2 class="GameTitle">Elemental Defenders</h2>
+
+                <p align="justify" class="GameDescription">
+                    This game is one my personal project made in Unreal 5.1. This game is still <b>IN PROGRESS</b>.
+                    <br>
+                    <br>
+                    The whole game was made with Unreal 5.1. As a programmer on this project, I do all my gameplay features using C++ classes and blueprints. 
+                    This is a online multiplayer game, where you have to defend zones from ennemies. 
+                    All players have abilities and projectiles to help them defend the zones. 
+                    After all zones are defended and completed, the game is won.
+                    <br>
+                    <br>
+                    On more technical terms, enemies are AI working on navmesh and have multiple actions depending on the zones and players interactions. 
+                    I also integrated a AI group manager to ensure efficiency in the game by limiting the numbers of AI updating ther behaviour on frames.
+                    For the server part, the server is hosted on a client and other players listen to it.
+                    Although the host client has the main authority, other clients can modify and impose their actions to the server.
+                    Finally, the map is generated randomly, so every map is different and the number of zones are also different in each generation.
+                    The map is composed of 25 tiles that are rotated and placed randomly (with certain rules) to ensure more possibilites.
+                    <br>
+                    <br>
+                    Here's a link to the code of the game and more description about the elements of the gameplay : <a href="https://github.com/Vespucci3101/ElementalDefenders" target="_blank" rel="noreferrer noopener">https://github.com/Vespucci3101/ElementalDefenders</a>
+                </p>
+
+                <div class="images">
+                    <div id="ImgContainer"><a href="InGame.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="InGame.png" alt="Nuclear Rollout"></a></div>
+                    <div id="ImgContainer"><a href="Lobby.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Lobby.png" alt="Credits"></a></div>
+                    <div id="ImgContainer"><a href="Zone.png" target="_blank" rel="noreferrer noopener"><img id="gameImg" src="Zone.png" alt="Credits"></a></div>
                 </div>
 
             </div>
